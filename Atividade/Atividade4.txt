@@ -1,0 +1,71 @@
+﻿// EXERCÍCIO 4
+
+JOGADOR:
+---------------------------------------------------------------------------------------------------
+namespace Abstracao
+{
+    internal class Jogador
+    {
+        public string Nome;
+        public string Posicao;
+        public int NumeroCamisa;
+    }
+}
+---------------------------------------------------------------------------------------------------
+TIME:
+---------------------------------------------------------------------------------------------------
+namespace Abstracao
+{
+    internal class Time
+    {
+        public string NomeDoTime;
+        public List<Jogador> ListaDeJogadores = new List<Jogador>();
+
+        public void AdicionarJogador(Jogador jogador)
+        {
+            ListaDeJogadores.Add(jogador);
+        }
+
+        public void ListarJogadores()
+        {
+            Console.WriteLine("Time: " + NomeDoTime);
+            Console.WriteLine("Escalação:");
+
+            foreach (Jogador jogador in ListaDeJogadores)
+            {
+                Console.WriteLine("Camisa " + jogador.NumeroCamisa + " - " + jogador.Nome + " - " + jogador.Posicao);
+            }
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------
+PROGRAM.CS:
+---------------------------------------------------------------------------------------------------
+Time time = new Time();
+
+            time.NomeDoTime = "Fudidos FC";
+
+            Jogador jogador1 = new Jogador();
+
+            jogador1.Nome = "Gabriel Fróes";
+            jogador1.Posicao = "Volante";
+            jogador1.NumeroCamisa = 9;
+
+            Jogador jogador2 = new Jogador();
+
+            jogador2.Nome = "CR7";
+            jogador2.Posicao = "Atacante";
+            jogador2.NumeroCamisa = 7;
+
+            Jogador jogador3 = new Jogador();
+
+            jogador3.Nome = "Erik";
+            jogador3.Posicao = "Lateral/Ponta";
+            jogador3.NumeroCamisa = 17;
+
+            time.AdicionarJogador(jogador1);
+            time.AdicionarJogador(jogador2);
+            time.AdicionarJogador(jogador3);
+
+            time.ListarJogadores();
+            Console.WriteLine("--------------------------------------");

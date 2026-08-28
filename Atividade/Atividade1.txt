@@ -1,0 +1,29 @@
+﻿// EXERCÍCIO 1
+------------------------------------------------------------------------------------------------
+Produto.cs
+---------------------------------------------------------------------------------------------------
+namespace Abstracao
+{
+    internal class Produto
+    {
+        public string Nome;
+        public double Preco;
+        public int Quantidadeemestoque;
+
+        public void ExibirInformacoes()
+        {
+            Console.WriteLine($"Nome: {Nome}");
+            Console.WriteLine($"Preço: {Preco}");
+            Console.WriteLine($"Quantidade em estoque: {Quantidadeemestoque}");
+            Console.WriteLine("-----------------------");
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------
+PROGRAM.CS
+---------------------------------------------------------------------------------------------------
+Produto produto = new Produto();
+
+     produto.Nome = "Notebook";
+     produto.Preco = 3500.00;
+     produto.Quantidadeemestoque = 10;
