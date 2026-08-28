@@ -68,25 +68,25 @@
             // EXERCÍCIO 4 
             Time time = new Time();
 
-            time.NomeDoTime = "Fudidos FC";
+            time.NomeDoTime = "SESI FC";
 
             Jogador jogador1 = new Jogador();
 
-            jogador1.Nome = "Gabriel Fróes";
-            jogador1.Posicao = "Volante";
-            jogador1.NumeroCamisa = 9;
+            jogador1.Nome = "Pedro";
+            jogador1.Posicao = "Meia";
+            jogador1.NumeroCamisa = 8;
 
             Jogador jogador2 = new Jogador();
 
-            jogador2.Nome = "CR7";
+            jogador2.Nome = "Gabriel";
             jogador2.Posicao = "Atacante";
-            jogador2.NumeroCamisa = 7;
+            jogador2.NumeroCamisa = 9;
 
             Jogador jogador3 = new Jogador();
 
-            jogador3.Nome = "Erik";
-            jogador3.Posicao = "Lateral/Ponta";
-            jogador3.NumeroCamisa = 17;
+            jogador3.Nome = "João";
+            jogador3.Posicao = "Ponta";
+            jogador3.NumeroCamisa = 11;
 
             time.AdicionarJogador(jogador1);
             time.AdicionarJogador(jogador2);
