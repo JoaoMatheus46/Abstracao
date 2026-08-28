@@ -36,6 +36,19 @@
             Console.WriteLine("Produtos");
             produto.ExibirInformacoes();
 
+            // EXERCÍCIO 2
+            Aluno Informacoesaluno = new Aluno();
+
+            Informacoesaluno.nome = "João";
+            Informacoesaluno.matricula = "123456";
+            Informacoesaluno.Nota1 = 8;
+            Informacoesaluno.Nota2 = 7;
+       
+
+            Console.WriteLine("Informações do aluno");
+            Informacoesaluno.exibirInformacoes();
+
+
 
 
 
