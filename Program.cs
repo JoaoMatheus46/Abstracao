@@ -48,8 +48,24 @@
             Console.WriteLine("Informações do aluno");
             Informacoesaluno.exibirInformacoes();
 
+            // EXERCÍCIO 3
+           
+
+            ContaBancaria conta = new ContaBancaria();
+
+            conta.Titular = "Froés";
+            conta.NumeroConta = "25";
+            conta.Saldo = 750;
+
+            Console.WriteLine("Informações da conta bancaria:");
+            conta.ExibirInformacoesContaBancaria1();
+            conta.Depositar(500);
+            conta.ExibirInformacoesContaBancaria2();
+            conta.Sacar(300);
+            conta.ExibirInformacoesContaBancaria3();
 
 
+            // EXERCÍCIO 4 
 
 
             Console.ReadKey();
