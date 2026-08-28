@@ -66,6 +66,34 @@
 
 
             // EXERCÍCIO 4 
+            Time time = new Time();
+
+            time.NomeDoTime = "Fudidos FC";
+
+            Jogador jogador1 = new Jogador();
+
+            jogador1.Nome = "Gabriel Fróes";
+            jogador1.Posicao = "Volante";
+            jogador1.NumeroCamisa = 9;
+
+            Jogador jogador2 = new Jogador();
+
+            jogador2.Nome = "CR7";
+            jogador2.Posicao = "Atacante";
+            jogador2.NumeroCamisa = 7;
+
+            Jogador jogador3 = new Jogador();
+
+            jogador3.Nome = "Erik";
+            jogador3.Posicao = "Lateral/Ponta";
+            jogador3.NumeroCamisa = 17;
+
+            time.AdicionarJogador(jogador1);
+            time.AdicionarJogador(jogador2);
+            time.AdicionarJogador(jogador3);
+
+            time.ListarJogadores();
+            Console.WriteLine("--------------------------------------");
 
 
             Console.ReadKey();
